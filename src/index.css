@@ -582,6 +582,19 @@ body { font-family: var(--font-body); }
   .testi__track{ transition: none !important; }
 }
 
+/* mobile: make frame exactly viewport wide (full-bleed) */
+@media (max-width: 640px){
+  .testi__frame{
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);   /* center full-bleed */
+  }
+  .testi__slide{
+    padding: 0;                       /* no inner padding on phone */
+  }
+}
+
+
 
 /* ===== FOOTER ===== */
 .footer{
