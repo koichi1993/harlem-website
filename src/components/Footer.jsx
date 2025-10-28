@@ -1,3 +1,6 @@
+import logoUrl from "../assets/harlem-logo.png";
+import igUrl from "../assets/instagram.png";
+
 export default function Footer() {
   // TODO: replace with your real links and address
   const INSTAGRAM_URL = "https://www.instagram.com/clubharlem/"; // ← put your IG here
@@ -14,7 +17,7 @@ export default function Footer() {
         <div className="footer__brand">
           <h2 id="footer-title" className="sr-only">Club footer</h2>
           <div className="footer__logo">
-            <img src="/src/assets/harlem-logo.png" alt="HARLEM logo" />
+            <img src={logoUrl} alt="HARLEM logo" />
           </div>
           <p className="footer__tag">Shibuya’s hip-hop heartbeat since ’97.</p>
 
@@ -27,7 +30,7 @@ export default function Footer() {
               aria-label="Open Instagram"
               title="Instagram"
             >
-              <img src="/src/assets/instagram.png" alt="" />
+              <img src={igUrl} alt="" />
             </a>
           </div>
         </div>
